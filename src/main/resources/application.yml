@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/exp_spring_batch?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+  config:
+    activate:
+      on-profile: local
